@@ -24,9 +24,9 @@ namespace UKAZ204Web.Pages
         public void OnGet()
         {
 
-            string name = config.GetSection("Name").Value;
+            string name = config["Name"];
             ViewData["name"] = name;
-            Trace.TraceInformation(name);
+           // Trace.TraceInformation(name);
         }
     }
 }

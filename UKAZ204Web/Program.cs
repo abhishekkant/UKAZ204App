@@ -21,6 +21,7 @@ namespace UKAZ204Web
             .ConfigureAppConfiguration((hostingContext, config) =>
             {
                 config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                config.AddEnvironmentVariables();
             })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
